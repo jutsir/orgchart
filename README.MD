@@ -65,7 +65,7 @@ If you'd like to run this application using the fast bolt driver against a stand
     You can use commented example of connection in the top of `src/main/resources/ogm.properties` file.
 3. You can then start the application using the same maven run command shown above.
 
-### Loading the initial dataset
+### Loading the sample data
 
 > **WARNING**
 >
