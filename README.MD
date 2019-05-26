@@ -42,7 +42,7 @@ You can start the application using maven:
 mvn spring-boot:run
 ```
 
-And that's it! Head to <http://localhost:8080> to see your application running.
+And that's it! Head to <http://localhost:5000> to see your application running.
 
 > **NOTE**
 > If you restart your application you may notice changes made in your database disappear.
@@ -75,7 +75,7 @@ If you'd like to run this application using the fast bolt driver against a stand
 
 You may notice that there is no data for you to interact with. To fix this, hit the following endpoint from your browser or using `curl`:
 
-<http://localhost:8080/api/reload>
+<http://localhost:5000/api/reload>
 
 This will pre-load the Neo4j database with sample of hierarchical employees data.  
 File with sample data located in the `src/main/resources/orgchart.cql` and file reference can be changed via `src/main/resources/application.properties` file.
