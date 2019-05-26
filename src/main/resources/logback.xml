@@ -4,7 +4,7 @@
 		<file>logs/org-chart.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- daily rollover -->
-			<fileNamePattern>org-chart.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<fileNamePattern>logs/org-chart.%d{yyyy-MM-dd}.log</fileNamePattern>
 
 			<!-- keep 100 days' worth of history capped at 2GB total size -->
 			<maxHistory>100</maxHistory>
