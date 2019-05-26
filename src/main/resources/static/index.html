@@ -1,0 +1,69 @@
+<html>
+ <head>
+  <script type="text/javascript" src="js/lib/vis.js"></script>
+  <link href="js/lib/vis.css" rel="stylesheet" type="text/css"/>
+  <link href="css/index.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+
+  <input data-tooltip="Adds a hierarchical relationship between employees using drag and drop" type="button" value="Link" id="link-button">
+  <input data-tooltip="Canceled link operation" type="button" value="Cancel" id="cancel-button"/>
+  <div id="employee-buttons">
+   <input data-tooltip="Deletes employee or link" type="button" value="Delete" id="delete-button"/>
+   <input data-tooltip="Adds employee" type="button" value="Add" id="add-button"/>
+   <input data-tooltip="Edit employee" type="button" value="Edit" id="edit-button"/>
+  </div>
+  <label for="can-sign-filter">Who can sign documents</label><input id="can-sign-filter" type="checkbox"/>
+  <input type="button" value="Search" id="search-button"/>
+
+  <div id="employee-popUp">
+   <div id="employee-popUp-header">
+    <span id="operation">employee</span> <br>
+   </div>
+   <table style="margin:10px;width: 100%">
+    <tr>
+     <td style="width: 40%">Name</td>
+     <td style="width: 60%"><input id="person-name" value="new value"/></td>
+    </tr>
+    <tr>
+     <td>Can sign documents</td>
+     <td><input id="can-sign" type="checkbox"/></td>
+    </tr>
+   </table>
+
+   <input type="button" value="save" id="save-button"/>
+   <input type="button" value="close" id="close-button"/>
+  </div>
+
+  <div id="search-popUp">
+   <div id="search-popUp-header">
+    <span>Search</span> <br>
+   </div>
+   <table style="margin:10px;width: 100%">
+    <tr>
+     <td style="width: 40%">Name</td>
+     <td style="width: 60%"><input id="person-search" value=""/></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td><input type="button" value="search" id="search"/></td>
+    </tr>
+    <tr>
+     <td>Search result</td>
+     <td>
+      <ul id="search-result"></ul>
+     </td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+      <input type="button" value="close" id="close"/>
+     </td>
+    </tr>
+   </table>
+  </div>
+
+  <div id="myNetwork"></div>
+  <script type="text/javascript" src="js/index.js"></script>
+ </body>
+</html>

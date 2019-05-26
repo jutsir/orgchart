@@ -1,0 +1,115 @@
+#myNetwork {
+    border: 1px solid lightgray;
+}
+
+#employee-buttons {
+    display: none;
+    position: absolute;
+    z-index: 299;
+}
+
+#link-button {
+    position: absolute;
+    z-index: 299;
+}
+
+#add-button {
+    position: absolute;
+    left: 40px;
+}
+
+#edit-button {
+    position: absolute;
+    left: 80px;
+}
+
+#delete-button {
+    position: absolute;
+    left: 150px;
+}
+
+#cancel-button {
+    position: absolute;
+    z-index: 299;
+    left: 210px;
+    display: none;
+}
+
+#search-button {
+    position: absolute;
+    right: 10px;
+    z-index: 299;
+}
+
+label[for=can-sign-filter], #can-sign-filter {
+    position: absolute;
+    right: 90px;
+    z-index: 299;
+}
+
+#can-sign-filter {
+    right: 70px;
+}
+
+#employee-popUp, #search-popUp {
+    display: none;
+    position: absolute;
+    top: 350px;
+    left: 170px;
+    z-index: 299;
+    width: 350px;
+    height: 125px;
+    background-color: #f9f9f9;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5394ed;
+    padding: 0px;
+    text-align: center;
+}
+
+#search-popUp {
+    height: 230px;
+}
+
+#employee-popUp-header, #search-popUp-header {
+    padding: 3px;
+    cursor: move;
+    z-index: 300;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+#person-name, #person-search {
+    width: 90%;
+}
+
+ul#search-result {
+    text-align: left;
+    height: 100px;
+    overflow: auto;
+    width: auto;
+    border: 1px solid lightgray;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 5px;
+    overflow-x: hidden;
+}
+
+ul#search-result li:hover {
+    background: #D9EAD3;
+    cursor: default;
+}
+
+.tooltip {
+    position: fixed;
+    padding: 10px 20px;
+
+    /* design */
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    font: italic 14px/1.3 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+}
